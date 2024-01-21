@@ -635,7 +635,55 @@ form button i {
   .portfolio .rowflex {
     flex-direction: row;
     overflow: scroll;
-    
   }
-  
 }
+
+.paddingtop20 {
+  padding-top: 50px;
+}
+
+.portfoliopage {
+  height: 100%;
+  flex: 1;
+}
+
+#myModal {
+  display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+      padding: 10vh 10vw;
+}
+
+#modalContent {
+  position: relative;
+      max-width: 80vw;
+      max-height: 80vh;
+      overflow-y: auto;
+      background: #fff;
+      border-radius: 8px;
+      padding: 0px;
+}
+
+#modalImage {
+  width: 100%;
+      height: auto;
+}
+
+.thumbnail {
+  cursor: pointer;
+}
+
+.close-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      color: white;
+      font-size: 40px;
+    }

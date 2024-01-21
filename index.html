@@ -101,50 +101,40 @@
         </div>
       </div>
 
+
+      <!-- Portfolio -->
       <div class="portfolio" id="portfolio">
         <div class="headfont name right"
           ><span class="pink">Portfolio <br /></span> Showcasing Our Finest
           Creations</div
         >
-
-        <div class="portfoliosection headfont">Some of our sites Photos</div>
         <div class="rowflex">
-          <div class="imgdiv" id="scrolling-container1">
-            <img src="photo1.png" />
+          <div class="imgdiv" id="scrolling-container3" onclick="openModal('photo6.png')">
+            <img src="photo6.png" />
           </div>
-          <div class="imgdiv" id="scrolling-container2">
+          <div class="imgdiv" id="scrolling-container1" onclick="openModal('photo7.png')">
+            <img src="photo7.png" />
+          </div>
+          <div class="imgdiv" id="scrolling-container1" onclick="openModal('photo4.png')">
+            <img src="photo4.png" />
+          </div>
+          <div class="imgdiv" id="scrolling-container2" onclick="openModal('photo2.png')">
             <img src="photo2.png" />
           </div>
-          <div class="imgdiv" id="scrolling-container3">
-            <img src="photo3.png" />
+
+          <div class="imgdiv" id="scrolling-container1" onclick="openModal('photo1.png')">
+            <img src="photo1.png" />
+          </div>
+          <div class="imgdiv" id="scrolling-container2" onclick="openModal('photo5.png')">
+            <img src="photo5.png" />
           </div>
         </div>
+      </div>
 
-        <div class="portfoliosection headfont">Some of our sites Videos </div>
-        <div class="rowflex">
-          <div class="project">
-            <div class="img">
-              <video width="640" height="360" controls>
-                <source src="video1.mov" type="video/mp4" id="carousel-img1" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div>
-          <div class="project">
-            <div class="img">
-              <video width="640" height="360" controls>
-                <source src="video2.mov" type="video/mp4" id="carousel-img2" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <!-- <div class="content">
-              <div class="parafont" id="carousel-content2"
-                >2 Check weather using this website.<br />It uses openweathermap
-                api.</div
-              >
-            </div> -->
-          </div>
-          
+      <div id="myModal">
+        <div id="modalContent">
+          <span class="close-button" onclick="closeModal()">&times;</span>
+          <img id="modalImage" src="" alt="Modal Image" />
         </div>
       </div>
 
@@ -152,8 +142,8 @@
         <div class="headfont name left"
           >What's make our <span class="pink">service<br /></span> unique?</div
         >
-        <div class="rowflex ">
-          <div class="rowflex box ">
+        <div class="rowflex">
+          <div class="rowflex box">
             <img src="communicate.svg" />
             <div class="parafont grey columnflex"
               >Communicate directly with the development team and get your
@@ -261,6 +251,6 @@
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <script defer  src="script.js"></script>
   </body>
 </html>

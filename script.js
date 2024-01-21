@@ -24,17 +24,14 @@ function itemact(item) {
 }
 
 
+function openModal(imageSrc) {
+  var modal = document.getElementById("myModal");
+  var modalImage = document.getElementById("modalImage");
 
-// autoscrooll div
-
-const scrollingContainer1 = document.getElementById("scrolling-container1");
-const scrollingContainer2 = document.getElementById("scrolling-container2");
-const scrollingContainer3 = document.getElementById("scrolling-container3");
-
-function autoScroll() {
-  scrollingContainer1.scrollTop += 1;
-  scrollingContainer2.scrollTop += 1;
-  scrollingContainer3.scrollTop += 1;
+  modal.style.display = "block";
+  modalImage.src = imageSrc;
 }
 
-setInterval(autoScroll, 50);
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
